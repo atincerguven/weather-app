@@ -16,7 +16,7 @@ const Home = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     if (isInitial) {
-      // dispatch(fetchWeather());
+      dispatch(fetchWeather());
     }
   }, []);
   return loading ? <Spinner /> : <Weather />;
